@@ -36,7 +36,7 @@ do
 	dong=$((dong + 1))
 	done
 donglon=$((donglon + 1))
-sleep 3
+sleep 4
 numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}|  tr -dc '0-9'`
 echo "Removed rule $((rulebandau-numberrule)). The remaining rules $numberrule"
 done
