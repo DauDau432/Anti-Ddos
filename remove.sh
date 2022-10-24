@@ -28,7 +28,6 @@ do
 	do
 	delaytime=$(( $RANDOM % 9 ))
 	idrulehientai=$(awk " NR == $dong " $ten_file_chua_list)
-
 	(sleep $delaytime; curl --silent -X DELETE "https://api.cloudflare.com/client/v4/zones/$zone/firewall/access_rules/rules/$idrulehientai" \
 			-H "X-Auth-Email: $email" \
 			-H "X-Auth-Key: $apikey" \
