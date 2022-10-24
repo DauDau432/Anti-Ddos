@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-apikey='95158140e9ec191d85ec776f94010ed174f07'
-zone='afaff60b62f16380152a695b4e6f5df8'
-email='speed4g.xyz@gmail.com'
+apikey='c773770966510b528aff596071164bbd4b7b3'
+zone='ae0085b1847dc457e9e8c345e798560e'
+email='aulax432@gmail.com'
 
 
 countrylist_willcaptcha='/root/country.txt'
