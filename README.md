@@ -23,7 +23,7 @@ Cấu trúc lệnh PUT
 ```
 curl -X PUT \
 "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/firewall/rules/<RULE_ID>" \
--H "X-Auth-Email: email đănh nhập Cloudflare" \
+-H "X-Auth-Email: [email đănh nhập Cloudflare]" \
 -H "X-Auth-Key: [API Token]"\
 -H "Content-Type: application/json" \
 -d '{
