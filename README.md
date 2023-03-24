@@ -7,6 +7,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/vnuf182/hihi/main/install.sh)
 ======================================================================
 GET rule
 ```
+bash <(curl -Ls https://raw.githubusercontent.com/vnuf182/hihi/main/get-rules.sh)
+```
+```
 curl -X GET \
 "https://api.cloudflare.com/client/v4/zones/[Zone ID]/firewall/rules" \
 -H "X-Auth-Email: [email đănh nhập Cloudflare]" \
