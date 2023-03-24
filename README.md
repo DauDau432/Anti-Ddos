@@ -19,26 +19,30 @@ curl -X GET \
 Sau khi GET rules cần ghi lại những thông tin sau
 ```
 “id”: “xxxxx”, : <RULE_ID>
-“paused”:false, : false là Rule đang được bật, true là Rule đang tắt
-“description”: “NAME”,  : Đặt tên cho Rule
+"action": "challenge",
+"priority": 564,
+“paused”: false, : false là Rule đang được bật, true là Rule đang tắt
+“description”: “NAME_rule”,  : Đặt tên cho Rule
 “id”: “xxxxx”, : <FILTER_ID>
+"expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
+"description": "NAME_rule"
 ```
 Cấu trúc lệnh PUT
 ```
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/<Zones ID>/firewall/rules/<RULE_ID>" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/<Zones_ID>/firewall/rules/<RULE_ID>" \
      -H "X-Auth-Email: [email đănh nhập Cloudflare]" \
-     -H "X-Auth-Key: [API Token]" \
+     -H "X-Auth-Key: [API_Token]" \
      -H "Content-Type: application/json" \
      --data '{
      "action": "challenge",
      "priority": 564,
      "paused": true,
-     "description": "NAME rule",
+     "description": "NAME_rule",
      "filter": {
     "id": "<FILTER_ID>",
     "expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
     "paused": false,
-    "description": "NAME rule"
+    "description": "NAME_rule"
   }
   }'
 ```
