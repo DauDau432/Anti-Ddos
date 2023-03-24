@@ -9,13 +9,14 @@ GET rule
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vnuf182/hihi/main/get-rules.sh)
 ```
+Cấu trúc GET rules
 ```
 curl -X GET \
 "https://api.cloudflare.com/client/v4/zones/[Zone ID]/firewall/rules" \
 -H "X-Auth-Email: [email đănh nhập Cloudflare]" \
 -H "X-Auth-Key: [API Token]"
 ```
-Sau khi GET rule cần ghi lại những thông tin sau
+Sau khi GET rules cần ghi lại những thông tin sau
 ```
 “id”: “xxxxx”, : <RULE_ID>
 “paused”:false, : false là Rule đang được bật, true là Rule đang tắt
