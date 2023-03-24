@@ -25,21 +25,20 @@ Sau khi GET rules cần ghi lại những thông tin sau
 ```
 Cấu trúc lệnh PUT
 ```
-curl -X PUT \
-"https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/firewall/rules/<RULE_ID>" \
--H "X-Auth-Email: [email đănh nhập Cloudflare]" \
--H "X-Auth-Key: [API Token]"\
--H "Content-Type: application/json" \
--d '{
-  "paused": false,
-  "description": "Đặt tên cho Rule",
-  "action": "allow",
-  "priority": 1,
-  "filter": {
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/<Zones ID>/firewall/rules/<RULE_ID>" \
+     -H "X-Auth-Email: [email đănh nhập Cloudflare]" \
+     -H "X-Auth-Key: [API Token]" \
+     -H "Content-Type: application/json" \
+     --data '{
+     "action": "challenge",
+     "priority": 564,
+     "paused": true,
+     "description": "NAME rule",
+     "filter": {
     "id": "<FILTER_ID>",
-    "expression": "(http.user_agent contains \"DDoS\"),
+    "expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
     "paused": false,
-    "description": "Đặt tên cho Rule"
+    "description": "NAME rule"
   }
-}'
+  }'
 ```
