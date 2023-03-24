@@ -9,7 +9,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "description": "Captcha Việt Nam",
      "filter": {
     "id": "1f99db421a2a48319e92e1d55905f556",
-    "expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
+    "expression": "(ip.geoip.country eq \"VN\" and not http.user_agent contains \"heck\")",
     "paused": false,
     "description": "Captcha Việt Nam"
   }
