@@ -1,6 +1,6 @@
 # ***Cài đặt***
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/vnuf182/hihi/main/install.sh)
+wget https://raw.githubusercontent.com/vnuf182/hihi/main/install.sh && screen bash auto.sh
 ```
 
 ***Config***
