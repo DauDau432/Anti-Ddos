@@ -13,7 +13,7 @@ Cấu trúc GET rules
 ```
 curl -X GET \
 "https://api.cloudflare.com/client/v4/zones/[Zone ID]/firewall/rules" \
--H "X-Auth-Email: [email đănh nhập Cloudflare]" \
+-H "X-Auth-Email: [email đăng nhập Cloudflare]" \
 -H "X-Auth-Key: [API Token]"
 ```
 Sau khi GET rules cần ghi lại những thông tin sau
@@ -30,7 +30,7 @@ Sau khi GET rules cần ghi lại những thông tin sau
 Cấu trúc lệnh PUT
 ```
 curl -X PUT "https://api.cloudflare.com/client/v4/zones/<Zones_ID>/firewall/rules/<RULE_ID>" \
-     -H "X-Auth-Email: [email đănh nhập Cloudflare]" \
+     -H "X-Auth-Email: [email đăng nhập Cloudflare]" \
      -H "X-Auth-Key: [API_Token]" \
      -H "Content-Type: application/json" \
      --data '{
