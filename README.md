@@ -1,3 +1,4 @@
+# Chương trình quản lý auto on/off rule cloudflare
 # ***Cài đặt***
 ```
 wget https://raw.githubusercontent.com/vnuf182/hihi/main/install.sh && screen bash auto.sh
