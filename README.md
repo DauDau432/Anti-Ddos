@@ -1,14 +1,14 @@
 # Chương trình quản lý auto on/off rule cloudflare
 # ***Cài đặt***
 ```
-wget https://raw.githubusercontent.com/vnuf182/hihi/main/install.sh && screen bash auto.sh
+wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install.sh && screen bash auto.sh
 ```
 
 ***Config***
 ======================================================================
 GET rule
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/vnuf182/hihi/main/get-rules.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/get-rules.sh)
 ```
 Cấu trúc GET rules
 ```
