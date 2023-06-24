@@ -7,4 +7,4 @@ rm -rf status.txt
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/status.txt
 rm -rf auto.sh
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/auto.sh
-screen bash auto.sh
+screen -S api-clf -dm bash auto.sh
