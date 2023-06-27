@@ -3,7 +3,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      -H "X-Auth-Key: c773770966510b528aff596071164bbd4b7b3" \
      -H "Content-Type: application/json" \
      --data '{
-     "action": "challenge",
+     "action": "managed_challenge",
      "priority": 564,
      "paused": true,
      "description": "Managed Challenge Việt Nam",
