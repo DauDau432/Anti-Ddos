@@ -6,11 +6,11 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "action": "challenge",
      "priority": 564,
      "paused": false,
-     "description": "Captcha Việt Nam",
+     "description": "Managed Challenge Việt Nam",
      "filter": {
     "id": "1f99db421a2a48319e92e1d55905f556",
-    "expression": "(ip.geoip.country eq \"VN\" and not http.user_agent contains \"heck\")",
+    "expression": "(http.user_agent contains \"iPhone\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (http.user_agent contains \"Android\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (http.user_agent contains \"Windows\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (not http.request.uri.query contains \"?zarsrc=30\u0026utm_source=zalo\u0026utm_medium=zalo\u0026utm_campaign=zalo\") or (not http.user_agent contains \"Zalo\") or (not http.user_agent contains \"heck\") or (http.host eq \"xmplus.daukute.us\")",
     "paused": false,
-    "description": "Captcha Việt Nam"
+    "description": "Managed Challenge Việt Nam"
   }
   }'
