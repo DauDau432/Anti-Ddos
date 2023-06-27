@@ -25,7 +25,7 @@ Sau khi GET rules cần ghi lại những thông tin sau và điền vào 2 mẫ
 “description”: “NAME_rule”,  : Đặt tên cho Rule
 "action": "challenge",
 "priority": 564,
-“paused”: false, : false là Rule đang được bật, true là Rule đang tắt
+“paused”: false, : false là Rule trên cloudflare đang được bật, true là trên cloudflare Rule đang tắt
 “id”: “xxxxx”, : <FILTER_ID>
 "expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
 ```
