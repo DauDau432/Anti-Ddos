@@ -9,7 +9,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "description": "Block quốc tế",
      "filter": {
     "id": "cff5e0f781c14510b9d52e2fbdeb5123",
-    "expression": "(not ip.geoip.country in {\"VN\"})",
+    "expression": "(not ip.geoip.country in {\"VN\"} and not http.user_agent contains \"heck\")",
     "paused": false,
     "description": "Block quốc tế"
   }
