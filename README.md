@@ -3,7 +3,9 @@
 ```
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install.sh
 ```
-
+```
+bash install.sh
+```
 ***Config***
 ======================================================================
 GET rule
