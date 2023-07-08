@@ -9,15 +9,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "description": "Block quốc tế",
      "filter": {
     "id": "cff5e0f781c14510b9d52e2fbdeb5123",
-    "expression": "(not ip.geoip.country in {\"VN\"} and http.user_agent con
-tains \"iPhone\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.re
-quest.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (not ip.g
-eoip.country in {\"VN\"} and http.user_agent contains \"Android\" and http.reque
-st.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST
-\"} and http.host eq \"daukute.us\") or (not ip.geoip.country in {\"VN\"} and ht
-tp.user_agent contains \"Windows\" and http.request.version in {\"HTTP/2\" \"HTT
-P/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.
-us\")",
+    "expression": "(not ip.geoip.country in {\"VN\"} and http.user_agent contains \"iPhone\" and http.request.version in {\"HTTP/2\"                    \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (not ip.geoip.country in {\"VN\"} and http.                   user_agent contains \"Android\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and htt                   p.host eq \"daukute.us\") or (not ip.geoip.country in {\"VN\"} and http.user_agent contains \"Windows\" and http.request.version in {\"HT                   TP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\")",
     "paused": false,
     "description": "Block quốc tế"
   }
