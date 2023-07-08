@@ -9,10 +9,7 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "description": "Managed Challenge Việt Nam",
      "filter": {
     "id": "1f99db421a2a48319e92e1d55905f556",
-    "expression": "(http.user_agent contains \"iPhone\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and
- http.host eq \"daukute.us\") or (http.user_agent contains \"Android\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"
-POST\"} and http.host eq \"daukute.us\") or (http.user_agent contains \"Windows\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in
-{\"GET\" \"POST\"} and http.host eq \"daukute.us\")",
+    "expression": "(http.user_agent contains \"iPhone\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP                   /3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (http.user_agent contains \"Android\" and ip.geoi                   p.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"                   daukute.us\") or (http.user_agent contains \"Windows\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"}                    and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\")",
     "paused": false,
     "description": "Managed Challenge Việt Nam"
   }
