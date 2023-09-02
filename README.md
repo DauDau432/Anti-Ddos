@@ -4,7 +4,7 @@
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
 ```
 ```
-bash install.sh
+bash install-api.sh
 ```
 ***Config***
 ======================================================================
