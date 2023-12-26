@@ -1,12 +1,12 @@
 ## Chương trình quản lý auto on/off rules cloudflare
-# ***Cài đặt***
+### ***Cài đặt***
 ```
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
 ```
 ```
 bash install-api.sh
 ```
-***Config***
+### ***Config***
 ======================================================================
 GET rule
 ```
