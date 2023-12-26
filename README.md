@@ -1,4 +1,4 @@
-# Chương trình quản lý auto on/off rule cloudflare
+## Chương trình quản lý auto on/off rules cloudflare
 # ***Cài đặt***
 ```
 wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
