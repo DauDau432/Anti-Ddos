@@ -1,4 +1,4 @@
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12f4463f20/firewall/rules/5818c02087a0422081340424468798b2" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/dc4829573a8be18a7f2de65921259f9e/firewall/rules/fc6762a6fe104550bb096b2e727e6052" \
      -H "X-Auth-Email: aulax432@gmail.com" \
      -H "X-Auth-Key: c773770966510b528aff596071164bbd4b7b3" \
      -H "Content-Type: application/json" \
@@ -8,8 +8,8 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12
      "paused": false,
      "description": "Block quốc tế",
      "filter": {
-    "id": "cff5e0f781c14510b9d52e2fbdeb5123",
-    "expression": "(not ip.geoip.country in {\"VN\"} and http.user_agent contains \"iPhone\" and http.request.version in {\"HTTP/2\"                    \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (not ip.geoip.country in {\"VN\"} and http.                   user_agent contains \"Android\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and htt                   p.host eq \"daukute.us\") or (not ip.geoip.country in {\"VN\"} and http.user_agent contains \"Windows\" and http.request.version in {\"HT                   TP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\")",
+    "id": "ff2b1f6e40e74000a3eb2223318054c0",
+    "expression": "(ip.geoip.country ne \"VN\" and http.user_agent contains \"Mozilla/5.0 (Windows NT\" and http.request.version in {\"HTTP/2\" \"HTTP/3\" \"HTTP/1.1\"} and http.request.method in {\"GET\" \"POST\"}) or (ip.geoip.country ne \"VN\" and http.user_agent contains \"Mozilla/5.0 (iPhone; CPU iPhone OS\" and http.request.version in {\"HTTP/2\" \"HTTP/3\" \"HTTP/1.1\"} and http.request.method in {\"GET\" \"POST\"}) or (ip.geoip.country ne \"VN\" and http.user_agent contains \"Mozilla/5.0 (Linux; Android\" and http.request.version in {\"HTTP/2\" \"HTTP/3\" \"HTTP/1.1\"} and http.request.method in {\"GET\" \"POST\"}) or (ip.geoip.country ne \"VN\" and http.user_agent contains \"Mozilla/5.0 (Macintosh; Intel Mac OS\" and http.request.version in {\"HTTP/2\" \"HTTP/3\" \"HTTP/1.1\"} and http.request.method in {\"GET\" \"POST\"})",
     "paused": false,
     "description": "Block quốc tế"
   }
