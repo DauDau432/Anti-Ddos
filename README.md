@@ -1,13 +1,6 @@
 ## Chương trình quản lý auto on/off rules cloudflare
-### ***Cài đặt***
-```
-wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
-```
-```
-bash install-api.sh
-```
-### ***Config***
 
+### ***Config***
 
 GET rules
 ```
@@ -40,4 +33,14 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/<zones id>/firewall/rule
     "description": "<mô tả của filter riêng lẻ>"
   }
   }'
+```
+
+-------------------------------------------------------------------
+
+### ***Cài đặt***
+```
+wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
+```
+```
+bash install-api.sh
 ```
