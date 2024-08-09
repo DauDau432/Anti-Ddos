@@ -9,7 +9,7 @@ bash install-api.sh
 ### ***Config***
 
 
-GET rule
+GET rules
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/get-rules.sh)
 ```
