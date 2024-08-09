@@ -17,27 +17,27 @@ bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/get-r
 Cấu trúc GET rules
 ```
 curl -X GET \
-"https://api.cloudflare.com/client/v4/zones/[Zone ID]/firewall/rules" \
--H "X-Auth-Email: [email đăng nhập Cloudflare]" \
--H "X-Auth-Key: [API Token]"
+"https://api.cloudflare.com/client/v4/zones/<zones id>/firewall/rules" \
+-H "X-Auth-Email: <email đăng nhập cloudflare>" \
+-H "X-Auth-Key: <api token>"
 ```
 
 Cấu trúc lệnh PUT
 ```
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/<Zones_ID>/firewall/rules/<RULE_ID>" \
-     -H "X-Auth-Email: [email đăng nhập Cloudflare]" \
-     -H "X-Auth-Key: [API_Token]" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/<zones id>/firewall/rules/<id rules>" \
+     -H "X-Auth-Email: <email đăng nhập cloudflare>" \
+     -H "X-Auth-Key: <api token>" \
      -H "Content-Type: application/json" \
      --data '{
-     "action": "challenge",
-     "priority": 564,
-     "paused": true,
-     "description": "NAME_rule",
+     "action": "<hành động của rules>",
+     "priority": <độ ưu tiên của rules>,
+     "paused": <trạng thái toàn bộ rules>,
+     "description": "<mô tả rules tổng thể>",
      "filter": {
-    "id": "<FILTER_ID>",
-    "expression": "(ip.geoip.country eq \"VN\" and http.user_agent contains \"heck\")",
-    "paused": false,
-    "description": "NAME_rule"
+    "id": "<id filter>",
+    "expression": "<biểu thức trong filter>",
+    "paused": <trạng thái của filter>,
+    "description": "<mô tả của filter riêng lẻ>"
   }
   }'
 ```
