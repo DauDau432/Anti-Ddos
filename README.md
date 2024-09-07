@@ -39,8 +39,5 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/<zones id>/firewall/rule
 
 ### ***Cài đặt***
 ```
-wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
-```
-```
-bash install-api.sh
+bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api)
 ```
