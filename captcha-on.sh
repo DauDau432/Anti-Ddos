@@ -1,6 +1,6 @@
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/dc4829573a8be18a7f2de65921259f9e/firewall/rules/adb451c64204498d986435b508aa8a0e" \
-     -H "X-Auth-Email: aulax432@gmail.com" \
-     -H "X-Auth-Key: c773770966510b528aff596071164bbd4b7b3" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/db0036a57189911a561e6326e350ea09/firewall/rules/bc8e7716b2bf4c0f9db1ab1318d85c20" \
+     -H "X-Auth-Email: hoanghpqk189@gmail.com" \
+     -H "X-Auth-Key: 4aa920ab578ca860209a05303f794672a605c" \
      -H "Content-Type: application/json" \
      --data '{
      "action": "managed_challenge",
