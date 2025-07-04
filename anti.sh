@@ -4,5 +4,5 @@ if [ $connect -lt 200 ]
 then
   cat /root/status.txt | grep "block" && bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/captcha-off.sh) && echo "allow" > /root/status.txt && clear && echo -e "ANTI DDOS OFF"
 else
-  cat /root/status.txt | grep "allow" && && bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/captcha-on.sh) && echo "block" > /root/status.txt && clear && echo -e "ANTI DDOS ON"
+  cat /root/status.txt | grep "allow" && bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/captcha-on.sh) && echo "block" > /root/status.txt && clear && echo -e "ANTI DDOS ON"
 fi
